@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё портфолио</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #20243a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #70e1c1;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #70e1c1;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #20243a, #414c78);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #70e1c1;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #70e1c1;
+            color: #20243a;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 4px 15px #00000010;
+        }
+
+        .card h3 {
+            color: #414c78;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #e8ecf7;
+        }
+
+        footer {
+            background: #20243a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MyPortfolio</h2>
+
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#projects">Проекты</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Привет! Я <span>веб-разработчик</span></h1>
+            <p>Создаю современные и удобные сайты</p>
+            <a href="#projects" class="button">Мои проекты</a>
+        </div>
+
+        <section id="about">
+            <h2>Обо мне</h2>
+
+            <div class="about">
+                <p>
+                    Я изучаю веб-разработку и создаю сайты с помощью
+                    HTML и CSS. Мне нравится разрабатывать красивые
+                    страницы и узнавать новые технологии.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Мои проекты</h2>
+
+            <div class="projects">
+                <div class="card">
+                    <h3>Первый сайт</h3>
+                    <p>Моя первая веб-страница, созданная с помощью HTML и CSS.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Портфолио</h3>
+                    <p>Сайт с информацией обо мне и моих навыках.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Учебный проект</h3>
+                    <p>Практическая работа по основам фронтенд-разработки.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Контакты</h2>
+            <p>Спасибо за посещение моего сайта!</p>
+            <p>Почта: example@mail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Моё портфолио. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
